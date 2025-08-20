@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Human struct {
 	field1 string
 }
@@ -10,5 +12,6 @@ type Action struct {
 }
 
 func main() {
-
+	var act Action = Action{Human{field1: "first"}, "second"}
+	fmt.Println(act)
 }
