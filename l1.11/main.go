@@ -33,6 +33,7 @@ func main() {
 	for _, v := range arr2 {
 		if mapNums[v] {
 			fmt.Print(v, " ")
+			delete(mapNums, v)
 		}
 	}
 }
